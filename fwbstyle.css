@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*:::: Natural Box Layout ::::*/
+html{
+	box-sizing: border-box;	
+}
+*,*:before, after{
+	box-sizing: inherit;	
+}
+
+/*:: General Style ::*/
+body{
+	margin:0;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size:16px;	
+}
+
+/*:: Remove Default Spacing Provided by the browser ::*/
+nav ul, header h2, header h1,section #leftColumn > p, section #rightColumn > h2, footer p{
+	margin:0;	
+} 
+
+/*:: Element Styles ::*/
+
+/*** Header Style ***/
+header{
+	height:120px;
+	background-color: #6998f2;
+	border-bottom:2px solid navy;
+}
+
+header h1, header h2{
+	margin-left:24px;	
+}
+
+header h1{
+	color:#6df2f3;	
+}
+
+header h1 #blue{
+	color: blue;
+	padding:5px;
+    border-radius: 0 0 50% 50%;
+	background-color:white;
+}
+
+header h2{
+	line-height:1.15;	
+	padding-left:100px;
+	font-style:italic;
+	display:inline-block;
+	color: white;
+	border-bottom:2px dotted #65d7f2;
+}
+
+header form{
+	width: 250px;
+	float:right;
+	margin-top:-20px;
+}
+
+header form input{
+	margin-left:10px;
+	padding:5px;
+	border-radius:5px;
+	color:navy;
+	font-weight:bold;
+	background-color:#6df2f3;	
+	cursor:pointer;
+}
+nav > ul{
+	width:500px;
+	margin:15px auto;
+	list-style-type:none;
+}
+
+ul li{
+	margin-left:10px;
+	margin-right:20px;
+	display:inline;
+}
+
+nav ul li a{
+	text-decoration:none;	
+	color: #f0f16a;
+	font-size:14px;
+	font-weight:bold;
+	padding:8px;
+}
+
+ul li :hover {
+	border-bottom:4px solid white;	
+}
+
+section{
+	width:100%;
+	height:450px;
+	background-color:pink;	
+}
+
+section #leftColumn{
+	width:35%;
+	max-width:450px;
+	height:450px;
+	float:left;
+	background-color:white;	
+}
+
+section #leftColumn p{
+	color:navy;
+	width:210px;
+	border-bottom:1px solid lightblue;
+	font-size:18px;
+	padding:7px;
+	margin-left:100px;
+	font-weight:bold;	
+}
+
+section #rightColumn{
+	background-color:#6678f0;
+	height:450px;	
+}
+
+section #rightColumn h2{
+	color:white;
+	display:inline;
+	position:relative;
+	left:20px;
+	top:5px;
+}
+
+section #rightColumn p{
+	color:white;
+	width:45%;
+	margin-left:470px;		
+	font-size:18px;
+}
+
+section #rightColumn > #facts{
+    width:200px;
+	height:200px;
+	background-color:#65d7f2;	
+	float:right;
+	margin-right:110px;
+	border-radius:5px;
+}
+
+section #rightColumn > #facts h3{
+	color:blue;
+	margin-left:10px;	
+}
+
+footer{
+	margin:0;
+	background-color:#6998f2;
+	height:60px;
+	text-align:center;	
+}
+
+footer p{
+    padding-top:15px;
+	margin:0;
+}
+
+
+
+
+
